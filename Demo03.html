@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>getElementsByClassName </title>
+	</head>
+	<body>
+		<p class="intro">你好世界！</p>
+		<p>该例子是演示<b> getElementsByClassName </b>的方法！</p>
+		
+		<script type="text/javascript">
+			var x = document.getElementsByClassName("intro");
+			document.write("<p>文本来自class 为intro的段落 ："+ x[0].innerHTML +"</p>");
+		</script>
+		
+		<p><b>注意：</b>Internet Explorer 8及更早的IE版本不支持 getElementByClassName() 方法。</p>
+	</body>
+</html>
