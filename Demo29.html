@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>循环输出这个页面的所有标签</title>
+	</head>
+	<body>
+		<h1>HTML Collection对象</h1>
+		<p>循环输出这个页面的所有标签。</p>
+		
+		<script type="text/javascript">
+			var x,l,i;
+			x = document.getElementsByTagName("*");
+			
+			l = x.length;
+			for (var i = 0; i < l; i++) {
+				document.write(x[i].tagName + "<br />");
+			}
+		</script>
+	</body>
+</html>

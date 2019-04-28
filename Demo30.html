@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<h1>JavaScript HTML DOM</h1>
+		<p>Hello World !</p>
+		<p>Hello Java !</p>
+		<p id="demo"></p>
+		
+		<script type="text/javascript">
+			var myCollection = document.getElementsByTagName("p");
+			
+			document.getElementById("demo").innerHTML = "第二个P标签的内容为: <span style='color: red;'>" + myCollection[1].innerHTML + "</span>";
+		</script>
+	</body>
+</html>
